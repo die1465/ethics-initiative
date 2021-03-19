@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كمامة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <style>
+    body{
+      background-image: url("Background.jpg");
+      width: 100% !important;
+      height: auto !important;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <div style="background-color: black !important;" class="navbar-fixed">
+    <nav class="">
+        
+        <div class="nav-wrapper black " style="padding-left: 45% !important;" >
+         <!--<a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a><-->
+          <a href="index.html" class="brand-logo white-text"><img src="Logo on black.png" style="width: 47% !important; height: auto !important;"/></a>
+          
+        </div>
+           
+    </nav>
+    </div>
+  <div class="row">
+  <div class="col m11 " style="margin-left: 4% !important; ">
+  <div class="card" style="margin-top: 0px !important; background-color: #1a1a1a !important;">
+  <div class="card-content" style="padding-left: 0px !important; padding-top: 0px !important; padding-bottom: 0px !important; padding-right: 0px !important;">
+  <img src="upperbody.png" style="width: 100% !important; height: auto !important; margin-left: 0px !important;"/>
+    <div class="carousel carousel-slider" style="padding: 30% !important;" >
+    <a class="carousel-item" href="page1.html" style="width: 45% !important; height: auto !important;"><img src="pic1.png" /></a>
+    <a class="carousel-item" href="page2.html" ><img src="https://cdn.pixabay.com/photo/2020/07/31/07/59/flowers-5452263_960_720.jpg" style="width: 45% !important; height: auto !important;"></a>
+    <a class="carousel-item" href="page3.html" ><img src="https://cdn.pixabay.com/photo/2020/07/31/07/59/flowers-5452263_960_720.jpg" style="width: 45% !important; height: auto !important;"></a>
+    
+  </div>
+  <img src="lowerbody.png" style="width: 100% !important; height: auto !important;">
+  </div>
+  </div>
+  </div>
+  </div>
+  </body>
+  
+  <script>
+  (function($){
+  $(function(){
+
+    $('.carousel').carousel();
+    autoplay();
+    function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 5000);
+        instance.set($index);
+    }
+  
+
+  });
+  
+})(jQuery); // end of jQuery name space
+</script>
+</body>
+
+</html>
